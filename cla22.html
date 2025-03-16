@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .hero-section {
+      position: relative;
+      background: url('gym-background.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #e64a19;
+    }
+
+    .app-links {
+      margin-top: 2rem;
+    }
+
+    .app-links img {
+      width: 150px;
+      margin-right: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .content h1 {
+          font-size: 2rem;
+        }
+        .content p {
+          font-size: 1rem;
+        }
+        .app-links img {
+          width: 120px;
+        }
+    }
+    
+  </style>
+</head>
+<body>
+
+<div class="hero-section">
+  <div class="overlay"></div>
+  
+  <div class="content">
+    <h1>Reach Your Best</h1>
+    <p>Whether you're training for a marathon or your biggest season yet, we're here to help you make serious progress.</p>
+    
+    <button class="btn">Sign Up</button>
+    
+    <p>Already a member? <a href="#" style="color:#ff5722; text-decoration:none;">Log In</a></p>
+
+    <div class="app-links">
+      <img src="appstore.png" alt="App Store">
+      <img src="playstore.png" alt="Google Play">
+    </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
